@@ -302,7 +302,12 @@ async def admin_broadcast(m: types.Message):
 # ---------------- SUPPORT ----------------
 @dp.message(lambda m: m.text == "📞 CONTACT ADMIN")
 async def contact_admin(message: types.Message):
-    await message.answer(f"📞 Contact Admin:\nhttps://t.me/{ADMIN_ID}")
+    await message.answer(
+        "📞 *Admin Support*\n\n"
+        "Tap below to contact admin 👇\n"
+        f"tg://user?id={ADMIN_ID}",
+        parse_mode="Markdown"
+    )
 
 # ---------------- RUN ----------------
 async def main():
@@ -310,4 +315,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
