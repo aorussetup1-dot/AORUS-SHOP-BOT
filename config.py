@@ -1,0 +1,3 @@
+BOT_TOKEN = "8464397225:AAHmUcsya--p-XltWm6ANpCEgb2FROCoMbw"
+ADMIN_ID = 1953766793  # your Telegram ID
+UPI_ID = "9503248752@omni"
